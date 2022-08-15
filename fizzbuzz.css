@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+}
+
+#results {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: gainsboro;
+  overflow-x: auto;
+}
+
+#results td, #results th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#results tr:nth-child(even){background-color: #f2f2f2;}
+
+#results tr:hover {background-color: #ddd;}
+
+.rev-style {
+    max-width: 700px;
+    padding: 20px 12px 10px 20px;
+    font: 18px Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    background-color: lightgray;
+}
+
+  .rev-style-headingB {
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+  .rev-style label {
+    display: block;
+    margin: 0 0 20px 15px;
+  }
+
+  .rev-style label > span {
+    width: 230px;
+    font-weight: bold;
+    float: left;
+ } 
+
+ .rev-style input[type=button] {
+    background: #f7941d;
+    border: none;
+    color: #fff;
+    margin-left: 15px;
+    padding: 8px 15px 8px 15px;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    box-shadow: 1px 1px 4px #DADADA;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+ }
+
+ .rev-style #buzzIt {
+     width: 110px;
+ }
+
+ .rev-style #buzzIt:hover {
+     cursor: pointer;
+     background: #EA7B00;
+     color: #fff;
+ }
+
+ .rev-style #resetTemplate {
+    width: 110px;
+ }
+
+ .rev-style #resetTemplate:hover {
+    cursor: pointer;
+    background: #EA7B00;
+    color: #fff;
+ }
+
+ 

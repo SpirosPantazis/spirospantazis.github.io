@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+    <link rel="stylesheet" type="text/css" href="fizzbuzz.css">
+    <script src="fizzbuzz.js" defer></script>
+</head>
+<body>
+    <img id="fizzImg" src="images/fizz_Buzz.png" class="responsive" alt="fizzbuzz">
+    <div class="rev-style">
+        <div class="rev-style-headingB">
+            A program that prints the numbers from 1 to 100. But for multiples of three prints "Fizz"
+            instead of the number and for the multiples of five prints "Buzz". For numbers which are multiples
+            of both three and five prints "FizzBuzz".
+        </div>
+        <form >
+            <label><span>Enter a number: </span><input id="Fizzvalue" type="number" name="fizz" value="3"></label>
+            <label><span>Enter another number: </span><input id="Buzzvalue" type="number" name="buzz" value="5"></label>       
+            <input type="button" id="buzzIt" value ="Buzz it" onclick="buzzItTemplate()">
+            <input type="button" id="resetTemplate" value="Reset" onclick="buzzItTemplateReset()">
+            <br>
+            <br>
+            <label><span>Results:</span></label><br>
+        </form>   
+        <div>
+        <table id="results">
+        <!--Generated reruslts go here-->
+        </table>
+        </div>
+    </div>  
+    <!--Templates for  displaying the output-->
+    <script id="template-header" type="text/template">
+        <thead>
+         <tr><th colspan="5">Results For Fizz Buzz</th></tr> 
+        </thead>
+    </script>
+    <script id="template-row-items" type="text/template">
+        <tr>
+          <td>{{val1}}</td><td>{{val2}}</td><td>{{val3}}</td><td>{{val4}}</td><td>{{val5}}</td>
+        </tr>
+    </script>
+</body>
+</html>

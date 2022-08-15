@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="loginformStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://css.gg/more-alt.css' rel='stylesheet'>
+    <script src="loginformScript.js" defer></script>
+</head>
+<body>
+            <form method="post" onsubmit="return setUserNamePswd('SpirosPantazis', '123456789')">
+                <div class="container">
+                <header><h1>Login Form</h1></header>
+                <span>Hello,</span>
+                <p>Enter user name and password.</p>
+                <div class="inputsFields">
+                    <input class="userName" type="text" name="fullname" placeholder="Enter FullName" required>
+                    <input class="pswd" type="password" name="password" placeholder="Enter Password" required>     
+                    <input class="submitButtonInput" type="submit" value="Submit">
+                </div>    
+                <i class="gg-more-alt" id="userNamePswdIcon" onclick="getUserNamePswd('SpirosPantazis', '123456789')"></i>
+                </div>
+                <p class="displayUnPsw">Select the three dots to see the fullname and password.</p>
+            </form>             
+</body>
+</html>
