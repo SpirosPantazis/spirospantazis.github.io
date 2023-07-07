@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" type="text/css" href="loginformStyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='https://css.gg/more-alt.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="loginformScript.js" defer></script>
 </head>
 <body>
@@ -20,7 +20,9 @@
                     <input class="pswd" type="password" name="password" placeholder="Enter Password" required>     
                     <input class="submitButtonInput" type="submit" value="Submit">
                 </div>    
-                <i class="gg-more-alt" id="userNamePswdIcon" onclick="getUserNamePswd('SpirosPantazis', '123456789')"></i>
+                <span class="material-symbols-outlined" id="userNamePswdIcon" onclick="getUserNamePswd('SpirosPantazis', '123456789')">
+                    more_vert
+                    </span>
                 </div>
                 <p class="displayUnPsw">Select the three dots to see the fullname and password.</p>
             </form>             
