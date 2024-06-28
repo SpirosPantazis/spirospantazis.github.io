@@ -91,17 +91,15 @@ input::-webkit-search-cancel-button {
 .header_form-icon .icon {
   position: absolute;
   right: 10px;
-}
-.header_form-icon .icon {
-  position: absolute;
   fill: #000;
 }
+
 .header_form-input {
   width: 0px;
   background-color: transparent;
 }
 .header_form-input {
-  width: 90%;
+  width: 200px;
   color: #000;
   background-color: #fff;
   cursor: auto;

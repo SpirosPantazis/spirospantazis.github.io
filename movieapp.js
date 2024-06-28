@@ -1,5 +1,4 @@
 const get_movie = (value) => {
-   // Challenge: Display a loader
    fetch(`https://api.tvmaze.com/singlesearch/shows?q=${value}&embed=episodes`)
      .then((response) => response.json())
      .then((data) => {
@@ -14,7 +13,6 @@ const get_movie = (value) => {
      })
      .catch((error) => {
        console.log(error);
-       // Challenge: Display error messages
      });
  };
  const create_UI = (data) => {
