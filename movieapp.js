@@ -76,6 +76,6 @@ const get_movie = (value = "The Lord of the Rings") => {
    get_movie(value);
  };
  // create default UI
- get_movie();
+ get_movie("The Lord of the Rings");
 
 
